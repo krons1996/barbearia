@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+
+}
+
+p {
+    font-size: 14px;
+
+}
+
+.divheader {
+    width: 100vw;
+    height: 60px;
+    background-color: black;
+
+    gap: 2em;
+    color: #ffffff;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding-top: 1%;
+    padding-left: 30%;
+    padding-bottom: 1%;
+}
+
+#logo {
+    width: 500px;
+}
+
+.section1 {
+    background-color: #2a2a2a;
+    background-image: linear-gradient(to right, #000000, #000000c9, #ffffff00), url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 5%;
+}
+
+span {
+    background: -webkit-linear-gradient(#ffffff, #ce0000, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.section2 {
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, #ffffff, #999999, #30303050), url(./img/craiyon_093132_Background_Image_with_thematic_Barber_Shop_website_with_color_white_and_black.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 5%;
+}
+
+.section-map{
+    padding: 5%;
+    background: linear-gradient(to top, #2a2a2a, #5b5b5b, #2a2a2a);
+    color: white;
+    width: 100vw;
+    display: flex;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+.carrossel {
+    width: 100vw;
+    height: 600px;
+    background-color: #2a2a2a;
+    padding: 5%;
+}
+
+.maindiv {
+    width: 50%;
+
+}
+
+.secdiv {
+    width: 50%;
+}
+
+
