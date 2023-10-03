@@ -11,26 +11,38 @@ h1 {
 
 }
 
-p {
-    font-size: 14px;
 
+p, a {
+    font-size: 14px;    
 }
+
+
+
 
 .divheader {
     width: 100vw;
-    height: 60px;
+    height: 15px;
     background-color: black;
-
-    gap: 2em;
+    gap: 1em;
     color: #ffffff;
     align-content: center;
     display: flex;
     align-items: center;
     position: fixed;
-    padding-top: 1%;
-    padding-left: 30%;
-    padding-bottom: 1%;
+    padding-top: 2em;
+    padding-left: 1%;
+    padding-bottom: 1em;
 }
+
+.divheader a {
+    color: #ffffff;
+}
+
+.divheader a:hover{
+    color: #ffffff;
+}
+
+
 
 #logo {
     width: 500px;
@@ -51,8 +63,10 @@ p {
     padding: 5%;
 }
 
+
+
 span {
-    background: -webkit-linear-gradient(#ffffff, #ce0000, #ff0000);
+    background: -webkit-linear-gradient(#000000, #ff0000, #ff0000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -60,8 +74,9 @@ span {
 
 .section2 {
     background-color: #ffffff;
-    background-image: linear-gradient(to right, #ffffff, #999999, #30303050), url(./img/craiyon_093132_Background_Image_with_thematic_Barber_Shop_website_with_color_white_and_black.png);
+    background-image: linear-gradient(to right, #ffffff, #979797e8, #3c3c3c), url(./img/craiyon_093132_Background_Image_with_thematic_Barber_Shop_website_with_color_white_and_black.png);
     background-position: right;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #000000;
@@ -75,10 +90,11 @@ span {
 
 .section-map{
     padding: 5%;
-    background: linear-gradient(to top, #2a2a2a, #5b5b5b, #2a2a2a);
+    background-color: #2a2a2a;
     color: white;
     width: 100vw;
     display: flex;
+    gap: 1em;
 }
 
 .map-responsive {
@@ -113,4 +129,30 @@ span {
     width: 50%;
 }
 
+.divfooter {
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    gap: 1em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    align-content: center;   
+    padding-top: 2px;
+    padding-right: 0;
+    padding-bottom: 2px;    
+    margin: 0;
+}
+.divfooter > p {
+    text-align: right;
+}
 
+.iconfooter {
+    width: 30px;   
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
