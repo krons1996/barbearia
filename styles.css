@@ -6,6 +6,8 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
+
+
 h1 {
     font-size: 30px;
 
@@ -15,7 +17,6 @@ h1 {
 p, a {
     font-size: 14px;    
 }
-
 
 
 
@@ -32,6 +33,7 @@ p, a {
     padding-top: 2em;
     padding-left: 1%;
     padding-bottom: 1em;
+    z-index: 99;
 }
 
 .divheader a {
@@ -93,31 +95,22 @@ span {
     background-color: #2a2a2a;
     color: white;
     width: 100vw;
+    height: 200x;
     display: flex;
     gap: 1em;
 }
 
-.map-responsive {
-    overflow: hidden;
-    padding-bottom: 40%;
-    position: relative;
-    
-}
 
-.map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-
-}
 
 .carrossel {
     width: 100vw;
-    height: 600px;
+    
     background-color: #2a2a2a;
     padding: 5%;
+}
+
+#carrossel {
+    height: 100%;
 }
 
 .maindiv {
@@ -131,14 +124,14 @@ span {
 
 .divfooter {
     width: 100vw;
-    height: 50px;
+    height: 60px;
     background-color: black;
     gap: 1em;
     color: #ffffff;
     display: flex;
     align-items: center;
     align-content: center;   
-    padding-top: 2px;
+    padding-top: 1%;
     padding-right: 0;
     padding-bottom: 2px;    
     margin: 0;
@@ -148,11 +141,27 @@ span {
 }
 
 .iconfooter {
-    width: 30px;   
+    width: 30px; 
+    border-radius: 50%;
+    
+}
+
+#logof{
+    margin-bottom: 0;
 }
 
 ul li {
     list-style: none;
     display: inline-block;
     padding: 10px;
+}
+
+.maindivf {
+    width: 60%;
+}
+
+.secdivf {
+    width: 40%;
+    text-align: right;
+    margin-right: 3%;
 }
