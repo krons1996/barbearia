@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('/assets/css/header.css');
 @import url('/assets/css/dropdown.css');
+@import url('/assets/css/cards.css');
+@import url('/assets/css/footer.css');
+@import url('/assets/css/carrossel.css');
 
 * {
     padding: 0;
@@ -9,7 +14,7 @@
 }
 
 
-h1 {
+h1 , h2, h3{
     font-size: 30px;
 
 }
@@ -18,56 +23,30 @@ p, a {
     font-size: 14px;
 }
 
-
-
-.divheader {
-    width: 100vw;
-    height: 15px;
-    background-color: black;
-    gap: 1em;
-    color: #ffffff;
-    align-content: center;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    margin: 0;
-    padding-top: 2em;
-    padding-left: 1%;
-    padding-bottom: 1em;
-    z-index: 99;
-    list-style: none;
+hr {
+    background-color: #000000;
 }
 
-.divheader a {
+a {
     color: #ffffff;
 }
-
-.divheader li a:hover {
-    background: #333;
-    color: #fff;
-    -moz-box-shadow: 0 3px 10px 0 #656565;
-    -webkit-box-shadow: 0 3px 10px 0 #656565;
-    text-shadow: 0px 0px 5px #656565;
+a:hover {
+        color: #ffffff;
 }
 
-.divheader a:hover {
-    color: #ffffff;
+ul li {
+    
+    display: inline-block;
+    padding: 10px;
 }
 
-.divheader li ul {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    background-color: #fff;
-    display: none;
+span {
+    background: -webkit-linear-gradient(#000000, #ff0000, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
-.divheader li:hover ul, .divheader li.over ul{display:block;}
-
-
-#logo {
-    width: 500px;
-}
 
 .section1 {
     background-color: #2a2a2a;
@@ -76,21 +55,12 @@ p, a {
     background-position: right;
     background-attachment: fixed;
     color: #ffffff;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     align-content: center;
     padding: 5%;
-}
-
-
-
-span {
-    background: -webkit-linear-gradient(#000000, #ff0000, #ff0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
 }
 
 .section2 {
@@ -101,36 +71,27 @@ span {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #000000;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     align-content: center;
     padding: 5%;
+    
 }
+
 
 .section-map {
     padding: 5%;
     background-color: #2a2a2a;
     color: white;
-    width: 100vw;
+    width: 100%;
     height: 200x;
     display: flex;
     gap: 1em;
 }
 
 
-
-.carrossel {
-    width: 100vw;
-
-    background-color: #2a2a2a;
-    padding: 5%;
-}
-
-#carrossel {
-    height: 100%;
-}
 
 
 .section3 {
@@ -141,13 +102,14 @@ span {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #000000;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+    width: 100%;
+    height: 100%;
     align-items: center;
-    align-content: center;
-    padding: 5%;
+    align-content: center;    
+    text-align: center;  
+    padding: 5%;  
 }
+
 
 .maindiv {
     width: 50%;
@@ -158,47 +120,23 @@ span {
     width: 50%;
 }
 
-.divfooter {
-    width: 100vw;
-    height: 60px;
-    background-color: black;
-    gap: 1em;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    padding-top: 1%;
-    padding-right: 0;
-    padding-bottom: 2px;
-    margin: 0;
+form {
+    text-align: left;
+}
+label {
+    width: 100%;
 }
 
-.divfooter>p {
-    text-align: right;
+input {
+    width: 100%;
+    background-color: #000000b4;
+    border-radius: 3px;
+    color: white;
 }
 
-.iconfooter {
-    width: 30px;
-    border-radius: 50%;
+
+#myUL li {
+    display: grid;
 
 }
 
-#logof {
-    margin-bottom: 0;
-}
-
-ul li {
-    
-    display: inline-block;
-    padding: 10px;
-}
-
-.maindivf {
-    width: 60%;
-}
-
-.secdivf {
-    width: 40%;
-    text-align: right;
-    margin-right: 3%;
-}

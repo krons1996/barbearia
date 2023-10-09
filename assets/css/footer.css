@@ -1,0 +1,32 @@
+.divfooter {
+    width: 100%;
+    background-color: black;
+    gap: 1em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-top: 0;
+    padding-right: 0;    
+    margin: 0;
+}
+
+.divfooter p {
+    text-align: right;
+}
+
+.iconfooter {
+    width: 30px;
+    border-radius: 50%;
+
+}
+
+.maindivf {
+    width: 60%;
+}
+
+.secdivf {
+    width: 40%;
+    text-align: right;
+    margin-right: 3%;
+}

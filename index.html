@@ -12,50 +12,62 @@
 </head>
 
 <body>
-    <header>
-        <nav class="divheader">
-            <ul>
-                <li>
-                    <h3><span>Brutos</span></h3>
-                </li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Conheça nossa empresa</a></li>
-                <li><a href="#localizacao">Nossa Localização</a></li>
-                <li><a href="#cadastro">Cadastro</a></li>
-                <li class="dropdown"><button class="dropbtn">Serviços</button>
+
+    <header class="header">
+        <div class="content">
+            <a href="#home" class="logo"><span>Brutos</span></a>
+
+            <input class="mobile-btn" type="checkbox" id="mobile-btn" />
+            <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"></span></label>
+
+            <ul class="nav">
+
+
+                <li><a href="#home" title="Sobre">Home</a></li>
+                <li><a href="#sobre" title="Sobre">Sobre</a></li>
+                <li><a href="#ambientacao" title="Sobre">Ambientação</a></li>
+
+
+                <div class="dropdown">
+                    <li><a href="#sv" title="Servicos" class="dropbtn">Serviços &darr;</a>
                         <div class="dropdown-content">
-                            <a href="#cortes">Cortes</a>
-                            <a href="#capilares">Tratamentos Capilares</a>
-                            <a href="#barba">Tratamentos de Barba</a>
-                            
+                            <a href="#hidratacao">Hidratação</a>
+                            <a href="#cortecard">Corte e Barba</a>
+                            <a href="#tonalizante">Tonalizantes</a>
                         </div>
                     </li>
+                </div>
+                <li><a href="#localizacao" title="Artigos">Localização</a></li>
             </ul>
-        </nav>
+
+
+        </div><!--content-->
     </header>
     <section class="section1" id="home">
         <div class="maindiv">
             <h1>Bem-vindo a Barbearia <span>Brutos</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, cumque quibusdam porro placeat iusto
-                pariatur voluptates. Dolores voluptatem aspernatur asperiores expedita quam provident sapiente omnis,
-                quaerat quis repellat velit! Asperiores?</p>
+            <p>Onde a tradição encontra a modernidade para criar uma experiência única de cuidado e estilo para homens
+                de todas as idades.</p>
         </div>
         <div class="secdiv">
         </div>
     </section>
 
     <section class="section2" id="sobre">
-        <div class="parallax">
-            <div class="maindiv">
-                <h1>Sobre nós</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, cumque quibusdam porro placeat iusto
-                    pariatur voluptates. Dolores voluptatem aspernatur asperiores expedita quam provident sapiente
-                    omnis,
-                    quaerat quis repellat velit! Asperiores?</p>
-            </div>
-            <div class="secdiv">
+        <div class="maindiv">
+            <h1>Sobre nós</h1>
+            <br>
 
-            </div>
+            <p>Na Barbearia <span>Brutos</span>, nossa missão é elevar a arte de cuidar e estilizar cabelos e barbas
+                a um novo
+                patamar. Valorizamos a tradição da barbearia clássica e combinamos com técnicas modernas e produtos
+                de alta qualidade para proporcionar aos nossos clientes um visual impecável e confiante.</p>
+
+            <p>Valorizamos a experiência do cliente tanto quanto o resultado final. Nosso
+                espaço foi projetado para proporcionar um ambiente relaxante e agradável, onde os clientes podem se
+                sentir à vontade enquanto recebem os melhores cuidados de beleza masculina.</p>
+        </div>
+        <div class="secdiv">
 
         </div>
 
@@ -63,39 +75,43 @@
 
 
 
-    <section class="carrossel">
+    <section class="carrossel" id="ambientacao">
         <!-- Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" id="carrosssel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="w-100" src="./assets/img/carrossel01_Pessoas_cortanto_o_cabelo_e_fazendo_a_bar_0.jpg"
                         alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>xxxx</h5>
-                        <p>xxx</p>
+                        <h5>Atendimento especializado</h5>
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <img class="w-100" src="./assets/img/carrossel02.png" alt="Second slide">
+                    <img class="w-100" src="./assets/img/barber_cutting_a_mans_hair_2.jpg" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>xxxx</h5>
-                        <p>xxx</p>
+                        <h5>Cuidado premium com a sua Barba</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="./assets/img/carrossel04_Pessoas_cortanto_o_cabelo_e_fazendo_a_bar_0.jpg"
-                        alt="Third slide">
+                    <img class="w-100" src="./assets/img/carrossel02.png" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>xxxx</h5>
-                        <p>xxx</p>
+                        <h5>Ambiente reconfortante</h5>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="./assets/img/barber_cutting_hair_1.jpg" alt="Four slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Estilo você encontra aqui</h5>
+                    </div>
+                </div>
+
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -109,6 +125,58 @@
     </section>
 
     <section class="section3" id="servicos">
+        <div>
+            <h1>Serviços</h1>
+        </div>
+        <hr>
+        <div class="cards">
+            <div class="card" id="hidratacao">
+                <div class="container">
+
+                    <h5>Hidratação</h5>
+                    <hr>
+                    <p>Revitalize seu cabelo para uma aparência mais suave e saudável.</p>
+                </div>
+                <div class="rodapecard">
+                    <a href="assets/pages/hidratacaopage.html" target="_self">
+                        Saiba mais &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" id="cortecard">
+                <div class="container">
+                    <h5>Corte e Barba</h5>
+                    <hr>
+                    <p>Da elegância clássica à vanguarda contemporânea, atendemos a todos os estilos.
+                    <p>
+                </div>
+                <div class="rodapecard">
+                    <a href="assets/pages/cortepage.html" target="_self">
+                        Saiba mais &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" id="tonalizante">
+                <div class="container">
+                    <h5>Tonalizantes</h5>
+                    <hr>
+                    <p>Recupere uma aparência mais jovem com a camuflagem dos fios brancos.</p>
+                </div>
+                <div class="rodapecard">
+                    <a href="assets/pages/tonalizantepage.html" target="_self">
+                        Saiba mais &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div>
+            <a href="assets/pages/agendamento.html" style="color: black;"><b>Realize um agendamento conosco  &rarr;</b></a>
+        </div>
+
 
     </section>
 
@@ -136,11 +204,12 @@
         <div class="divfooter">
             <div class="maindivf">
                 <ul>
-                    <li><a href="https://github.com/krons1996" target="_blank"><img src="./img/icone-github-violet.png"
-                                alt="github" class="iconfooter" id="githubicon"></a>
+                    <li><a href="https://github.com/krons1996" target="_blank"><img
+                                src="./assets/img/icone-github-violet.png" alt="github" class="iconfooter"
+                                id="githubicon"></a>
                     </li>
-                    <li><a href="https://br.linkedin.com/in/italo-gadelha" target="_blank"><img src="./img/linkedin.svg"
-                                alt="linkedin" class="iconfooter" id="linkedinicon"></a>
+                    <li><a href="https://br.linkedin.com/in/italo-gadelha" target="_blank"><img
+                                src="./assets/img/linkedin.svg" alt="linkedin" class="iconfooter" id="linkedinicon"></a>
                     </li>
                 </ul>
             </div>
